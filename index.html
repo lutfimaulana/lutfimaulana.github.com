@@ -1,0 +1,42 @@
+<!Doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Belajar Css3</title>
+<style>
+
+#div1{ width :200px; height :200px; background : green; margin-bottom : 5px;
+    transition : transform 5s;
+	transform-style : preserve-3d;
+	
+} 
+#div1:hover{
+ transform : rotatey(180deg);  
+  
+  }
+#front, #back{
+  position: absolute;
+  top : 0px;
+  left :0px;
+  height : 200px;
+  width : 200px;
+  backface-visibility : hidden; 
+}
+#back{
+ transform:rotatey(180deg);
+ 
+}
+  
+  </style>
+
+</head>
+<body>
+<div id="div1">
+<div id="front">Lutfi</div>
+<div id="back">Maulana</div>
+</div>
+</body>
+
+
+
+</html>
